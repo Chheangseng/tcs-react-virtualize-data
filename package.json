@@ -1,8 +1,13 @@
 {
   "name": "tcs-react-virtualize-data",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "improve performance when render html with data",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "publishConfig": {
+    "readme": "README.md"
+  },
   "dependencies": {
     "csstype": "^3.1.3",
     "react": "^19.0.0"
