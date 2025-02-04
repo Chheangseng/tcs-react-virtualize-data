@@ -1,0 +1,31 @@
+{
+  "name": "tcs-react-virtualize-data",
+  "version": "1.0.2",
+  "description": "improve performance when render html with data",
+  "main": "index.ts",
+  "dependencies": {
+    "csstype": "^3.1.3",
+    "react": "^19.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chheangseng/tcs-react-virtualize-data.git"
+  },
+  "keywords": [
+    "tcs"
+  ],
+  "author": "taing chheangseng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chheangseng/tcs-react-virtualize-data/issues"
+  },
+  "homepage": "https://github.com/Chheangseng/tcs-react-virtualize-data#readme",
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "typescript": "^5.7.3"
+  }
+}
