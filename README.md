@@ -41,9 +41,9 @@ export default function MyComponent() {
         goNext,       // Function to load the next page of data
         goBack,       // Function to load the previous page of data
     } = useVirtualizeData({
-        data: moviesData,      // Large dataset to be virtualized
-        itemsPerPage: 30,      // Number of items per page (Optional, defaults to 30)
-        storeAmountOfPages: 2, // How many pages to keep in memory (Optional, defaults to 2)
+        data: moviesData,      // Large dataset
+        itemsPerPage: 30,      // Items per page (default: 30)
+        storeAmountOfPages: 2, // Pages kept in memory (default: 2)
     });
 
     return (
@@ -68,10 +68,10 @@ export default function MyComponent() {
  * for triggering pagination when scrolling up or down.
  */
 function ItemWithReactWayPoint({
-                                   haveWayPoint,  // Boolean to determine if Waypoint should be added
-                                   onScrollTop,   // Function to call when scrolling upwards
-                                   onScrollButton, // Function to call when scrolling downwards
-                                   item,          // The individual data item to render
+                                   haveWayPoint,  
+                                   onScrollTop,  
+                                   onScrollButton, 
+                                   item, 
                                }: {
     haveWayPoint: boolean;
     onScrollTop?: () => void;
