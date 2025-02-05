@@ -8,12 +8,11 @@
 
 ## 🤔 Why Use `tcs-react-virtualize-data`?
 
-- **🎨 UI-Friendly** – Works with any existing design.
-- **⚡ Faster Rendering** – Minimizes DOM updates for smooth performance.
-- **🚀 Virtualized Loading** – Renders only visible items for efficiency.
+- **🛠 Easy Integration** – Simple setup with React.
+- **🎨 Seamless Integration** – Works with any existing design.
 - **📋 Universal Support** – Compatible with lists, tables, and grids.
-- **🏎 High Performance** – Optimized for large datasets.
-- **⚙️ Fully Customizable** – Adapts to different UI needs.
+- **🔄 Optimized Rendering** – Reduces DOM updates for a smoother experience.
+- **📊 High Performance** – Build for Optimized for large datasets.
 
 ---
 
