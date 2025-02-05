@@ -1,23 +1,29 @@
-```md
 # tcs-react-virtualize-data
 
-**tcs-react-virtualize-data** is a React library for efficiently rendering large datasets by virtualizing and loading data piece by piece.
+**tcs-react-virtualize-data** is a React library for efficiently rendering large datasets by virtualizing and loading data piece by piece. It ensures optimal performance by rendering only the visible data and dynamically loading more as needed.
+
+---
 
 ## 📌 Features
+
 - ⚡ **Efficient Virtualization** – Renders only visible data to improve performance.
 - 📊 **Handles Large Datasets** – Load data dynamically as users scroll.
 - 🔄 **Optimized Rendering** – Reduces DOM updates for a smoother experience.
 - 🛠 **Easy Integration** – Simple setup with React.
 
+---
+
 ## 📦 Installation
+
 Install the package via npm or yarn:
 
-```sh
+```bash
 npm install tcs-react-virtualize-data
 # or
 yarn add tcs-react-virtualize-data
 ```
 
+---
 ## 🚀 Usage
 
 Import and use the hook in your React project:
@@ -65,12 +71,12 @@ const MyComponent = () => {
 - ⚙️ **Customizable**: Easily adapt to different UI needs.
 
 ## 📜 License
-MIT License © [Your Name](https://github.com/yourusername)
+MIT License © [Taing chheangseng](https://github.com/Chheangseng)
 
 ---
 
 🚀 **Contributions & Issues**  
-Have a suggestion or found a bug? Feel free to [open an issue](https://github.com/yourusername/tcs-react-virtualize-data/issues) or contribute!
+Have a suggestion or found a bug? Feel free to [open an issue](https://github.com/Chheangseng/tcs-react-virtualize-data/issues) or contribute!
 ```
 
 ### 🔥 **What's Improved?**
