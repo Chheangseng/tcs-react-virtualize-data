@@ -55,7 +55,8 @@ export default function MyComponent() {
                     item={value}
                     onScrollButton={goNext}   // Triggered when scrolling down
                     onScrollTop={goBack}      // Triggered when scrolling up
-                    haveWayPoint={index === 0 || index === array.length - 1} // Add Waypoint to first & last items
+                    haveWayPoint={index === 0 || index === array.length - 1}
+                    // Add Waypoint to first & last items
                 />
             ))}
         </div>
