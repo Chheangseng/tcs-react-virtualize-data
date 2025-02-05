@@ -109,7 +109,6 @@ function ItemWithReactWayPoint({
 
 ## ✨ Why Use `tcs-react-virtualize-data`?
 - 🏎 **Boosts Performance**: Reduces DOM nodes for large lists.
-- 🔄 **Dynamic Loading**: Supports paginated & lazy loading.
 - ⚙️ **Customizable**: Easily adapt to different UI needs.
 
 ## 📜 License
