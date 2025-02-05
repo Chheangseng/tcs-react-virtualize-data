@@ -1,4 +1,4 @@
-import {useMemo, useState} from 'react';
+import {useCallback, useMemo, useState} from 'react';
 
 export default function useVirtualizeData<T>({
   data = [],
@@ -31,15 +31,15 @@ export default function useVirtualizeData<T>({
   const canGoNext = viewPages[viewPages.length - 1] < totalPages;
   const canGoBack = viewPages[0] > 1;
 
-  function goNext() {
+  const goNext = useCallback(() => {
     if (!canGoNext) return;
     setViewPages(prevState => prevState.map(value => value + 1));
-  }
+  }, [canGoNext, setViewPages]);
 
-  function goBack() {
+  const goBack = useCallback(() => {
     if (!canGoBack) return;
     setViewPages(prevState => prevState.map(value => value - 1));
-  }
+  }, [canGoBack, setViewPages]);
 
   return {data: paginatedData, goNext, goBack};
 }
