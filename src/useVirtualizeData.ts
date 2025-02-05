@@ -40,6 +40,11 @@ export default function useVirtualizeData<T>({
     if (!canGoBack) return;
     setViewPages(prevState => prevState.map(value => value - 1));
   }, [canGoBack, setViewPages]);
-
-  return {data: paginatedData, goNext, goBack};
+  const reset = useCallback(() => {
+    setViewPages(
+        Array.from({length: storeAmountOfPages}, (_, index) => index + 1),
+    );
+  }, [storeAmountOfPages]);
+  
+  return {data: paginatedData, goNext, goBack,reset};
 }

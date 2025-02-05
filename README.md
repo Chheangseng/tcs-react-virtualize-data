@@ -32,7 +32,7 @@ yarn add tcs-react-virtualize-data
 Import and use the hook in your React project:
 
 ```tsx
-import { useVirtualizeData } from "tcs-react-virtualize-data";
+import useVirtualizeData from "tcs-react-virtualize-data";
 import { moviesData } from "./testData.tsx";
 import { Waypoint } from "react-waypoint";
 import YourItem from "./MovieItem.tsx";
