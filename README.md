@@ -1,5 +1,3 @@
-Here’s your **updated README.md**, now including default values and marking optional props.
-
 ```md
 # tcs-react-virtualize-data
 
