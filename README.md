@@ -1,16 +1,17 @@
 # tcs-react-virtualize-data
 
-**tcs-react-virtualize-data** is a React library for efficiently rendering large datasets by virtualizing and loading data piece by piece. It ensures optimal performance by rendering only the visible data and dynamically loading more when function are called.
+🚀 **Effortlessly Render Large Datasets Without Slowing Down Your UI!**
+
+**tcs-react-virtualize-data** is a lightweight React library that **renders only visible items**, improving performance **without affecting your UI**. It works seamlessly with tables, grids, lists, and more.
 
 ---
 
 ## 🤔 Why Use `tcs-react-virtualize-data`?
 
+- **🎨 UI-Friendly** – Works with any existing design.
 - **⚡ Faster Rendering** – Minimizes DOM updates for smooth performance.
 - **🚀 Virtualized Loading** – Renders only visible items for efficiency.
-- **🎨 UI-Friendly** – Works with any existing design.
 - **📋 Universal Support** – Compatible with lists, tables, and grids.
-- **🔄 Smart Scrolling** – Loads data as needed.
 - **🏎 High Performance** – Optimized for large datasets.
 - **⚙️ Fully Customizable** – Adapts to different UI needs.
 
@@ -110,9 +111,6 @@ function ItemWithReactWayPoint({
 | `itemsPerPage`      | `number`  | `30`    | ❌ No    | Number of items to display per page.              |
 | `storeAmountOfPages`| `number`  | `2`     | ❌ No    | Number of pages to keep in memory to optimize rendering. |
 
-## ✨ Why Use `tcs-react-virtualize-data`?
-- 🏎 **Boosts Performance**: Reduces DOM nodes for large lists.
-- ⚙️ **Customizable**: Easily adapt to different UI needs.
 
 ## 📜 License
 MIT License © [Taing chheangseng](https://github.com/Chheangseng)
