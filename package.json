@@ -1,6 +1,6 @@
 {
   "name": "tcs-react-virtualize-data",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "improve performance when render html with data",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,22 @@
     "url": "git+https://github.com/Chheangseng/tcs-react-virtualize-data.git"
   },
   "keywords": [
-    "tcs"
+    "tcs",
+    "react",
+    "virtualization",
+    "virtualize",
+    "pagination",
+    "lazy-load",
+    "react-virtual",
+    "infinite-scroll",
+    "performance",
+    "list-rendering",
+    "large-data",
+    "efficient-rendering",
+    "virtual-list",
+    "virtual-scroller",
+    "react-hook",
+    "data-rendering"
   ],
   "author": "taing chheangseng",
   "license": "ISC",

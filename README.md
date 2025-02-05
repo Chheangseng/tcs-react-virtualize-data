@@ -1,6 +1,6 @@
 # tcs-react-virtualize-data
 
-**tcs-react-virtualize-data** is a React library for efficiently rendering large datasets by virtualizing and loading data piece by piece. It ensures optimal performance by rendering only the visible data and dynamically loading more as needed.
+**tcs-react-virtualize-data** is a React library for efficiently rendering large datasets by virtualizing and loading data piece by piece. It ensures optimal performance by rendering only the visible data and dynamically loading more when function are called.
 
 ---
 
@@ -30,32 +30,73 @@ Import and use the hook in your React project:
 
 ```tsx
 import { useVirtualizeData } from "tcs-react-virtualize-data";
+import { moviesData } from "./testData.tsx";
+import { Waypoint } from "react-waypoint";
+import YourItem from "./MovieItem.tsx";
 
-const MyComponent = () => {
-  const largeDataSet = Array.from({ length: 1000 }, (_, index) => `Item ${index + 1}`);
+export default function MyComponent() {
+    // Using useVirtualizeData to handle virtualized pagination
+    const {
+        data: items,  // The currently visible items based on pagination
+        goNext,       // Function to load the next page of data
+        goBack,       // Function to load the previous page of data
+    } = useVirtualizeData({
+        data: moviesData,      // Large dataset to be virtualized
+        itemsPerPage: 30,      // Number of items per page (Optional, defaults to 30)
+        storeAmountOfPages: 2, // How many pages to keep in memory (Optional, defaults to 2)
+    });
 
-  const { data, goNext, goBack } = useVirtualizeData({
-    data: largeDataSet,
-    itemsPerPage: 30, // Optional, defaults to 30
-    storeAmountOfPages: 2, // Optional, defaults to 2
-  });
+    return (
+        <div>
+            {/* Rendering virtualized items */}
+            {items.map((value, index, array) => (
+                <ItemWithReactWayPoint
+                    key={value.id}
+                    item={value}
+                    onScrollButton={goNext}   // Triggered when scrolling down
+                    onScrollTop={goBack}      // Triggered when scrolling up
+                    haveWayPoint={index === 0 || index === array.length - 1} // Add Waypoint to first & last items
+                />
+            ))}
+        </div>
+    );
+}
 
-  return (
-    <div>
-      <ul>
-        {data.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <button onClick={goBack} disabled={!canGoBack}>
-        Previous
-      </button>
-      <button onClick={goNext} disabled={!canGoNext}>
-        Next
-      </button>
-    </div>
-  );
-};
+/**
+ * Component to render individual items, optionally including a Waypoint
+ * for triggering pagination when scrolling up or down.
+ */
+function ItemWithReactWayPoint({
+                                   haveWayPoint,  // Boolean to determine if Waypoint should be added
+                                   onScrollTop,   // Function to call when scrolling upwards
+                                   onScrollButton, // Function to call when scrolling downwards
+                                   item,          // The individual data item to render
+                               }: {
+    haveWayPoint: boolean;
+    onScrollTop?: () => void;
+    onScrollButton?: () => void;
+    item: any;
+}) {
+    if (haveWayPoint) {
+        return (
+            <Waypoint
+                onEnter={(args) => {
+                    // Load the next set of data when reaching the bottom
+                    if (args.previousPosition === "below" && onScrollButton) {
+                        onScrollButton();
+                    }
+                    // Load previous data when reaching the top
+                    if (args.previousPosition === "above" && onScrollTop) {
+                        onScrollTop();
+                    }
+                }}
+            >
+                <YourItem movie={item} />
+            </Waypoint>
+        );
+    }
+    return <YourItem movie={item} />;
+}
 ```
 
 ## ⚙️ Props
