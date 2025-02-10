@@ -1,6 +1,6 @@
 {
   "name": "tcs-react-virtualize-data",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "improve performance when render html with data",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -41,7 +41,7 @@
   "author": "taing chheangseng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Chheangseng/tcs-react-virtualize-data-issue/issues"
+    "url": "https://github.com/Chheangseng/tcs-react-virtualize-data/issues"
   },
   "homepage": "https://github.com/Chheangseng/tcs-react-virtualize-data#readme",
   "devDependencies": {
