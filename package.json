@@ -41,7 +41,7 @@
   "author": "taing chheangseng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Chheangseng/tcs-react-virtualize-data/issues"
+    "url": "https://github.com/Chheangseng/tcs-react-virtualize-data-issue/issues"
   },
   "homepage": "https://github.com/Chheangseng/tcs-react-virtualize-data#readme",
   "devDependencies": {
