@@ -114,15 +114,13 @@ function ItemWithReactWayPoint({
 ## 📜 License
 ISC License © [Taing chheangseng](https://github.com/Chheangseng)
 
+Made with ❤️ in Cambodia 🇰🇭
+
 ---
 
 🚀 **Contributions & Issues**  
 Have a suggestion or found a bug? Feel free to [open an issue](https://github.com/Chheangseng/tcs-react-virtualize-data/issues) or contribute!
-```
-
-### 🔥 **What's Improved?**
-✅ **Props Table Now Includes Default Values & Required Status**  
-✅ **Clarified Optional Props in the Usage Example**  
-✅ **More Readable Structure**  
 
 Let me know if you need further tweaks! 🚀
+
+
