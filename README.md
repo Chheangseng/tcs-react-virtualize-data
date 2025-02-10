@@ -117,7 +117,7 @@ ISC License © [Taing chheangseng](https://github.com/Chheangseng)
 ---
 
 🚀 **Contributions & Issues**  
-Have a suggestion or found a bug? Feel free to [open an issue](https://github.com/Chheangseng/tcs-react-virtualize-data-issue/issues) or contribute!
+Have a suggestion or found a bug? Feel free to [open an issue](https://github.com/Chheangseng/tcs-react-virtualize-data/issues) or contribute!
 ```
 
 ### 🔥 **What's Improved?**
